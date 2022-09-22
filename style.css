@@ -1,0 +1,155 @@
+/* >>>>>>>>>>>>> BASE STYLES GENERAL <<<<<<<<<<<<<<<<<<<< */
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+html, body {
+    min-height: 100%;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    padding: 1rem 1.5rem 0;
+    line-height: 1.6rem;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* CSS for Sticky Footer. Only works when html and body is set to min-height: 100%*/
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+
+main {
+    max-width: 23rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden; 
+}
+
+
+h1 { font-weight: 900;}
+
+li p { margin: 0;}
+
+p { 
+    padding: .5rem;
+    color: grey;
+}
+
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+/* >>>>>>>>>>>>>>>> CLASS styles <<<<<<<<<<<<<<<<<<<<< */
+
+
+.hero-img {
+    display: block;
+    width: 100%;
+}
+
+
+.payment,
+.cancel {
+    display: block;
+    border: none;
+}
+
+
+.payment, 
+.cancel, 
+.subs,
+.music-icon, 
+.list-link {
+    margin: auto;
+}
+
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem .5rem;
+    margin: 1.5rem;
+    border-radius: 1.1rem;
+    background-color: #f8f8ff;
+}
+
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: .8rem 4rem;
+    border-radius: .8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 .8rem ghostwhite;
+}
+
+
+.cancel {
+    padding: 1.5rem; 
+    background-color: inherit;
+    font-weight: 900;
+    font-size: 1rem;
+    color: grey;
+}
+
+
+.payment:hover {
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+
+a:hover {
+    text-decoration: none; 
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>> Media queries <<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+@media only screen and (min-width: 290px) and (max-width: 470px) {
+    body { background-color: purple; }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 670px) {
+    body { background-color: pink; }
+}
+
+@media only screen and (min-width: 671px) and (max-width: 800px) {
+    body { background-color: rgba(0, 255, 64, 0.829); }
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>> END OF CSS <<<<<<<<<<<<<<<<<<<<<<<<<< */
+   
